@@ -196,54 +196,72 @@ const hombres = {
 
 const dataGrafica = [mujeres, hombres];
 
+// Calcula primero los últimos puntos de cada serie
+const últimoAñoH = xHombres[xHombres.length - 1];
+const últimaVeloH = yHombres[yHombres.length - 1];
+const últimoAñoM = xMujeres[xMujeres.length - 1];
+const últimaVeloM = yMujeres[yMujeres.length - 1];
+
 var layout = {
+  // Ejes sin grid líneas
   xaxis: {
     title: {
       text: "Año",
+      font: { size: 16, color: "#333", family: "Roboto, sans-serif" }
     },
+    tickfont: { size: 14, color: "#333" },
+    showgrid: false
   },
   yaxis: {
     title: {
       text: "Velocidad (km/h)",
+      font: { size: 16, color: "#333", family: "Roboto, sans-serif" }
     },
+    tickfont: { size: 14, color: "#333" },
+    showgrid: false
   },
   hovermode: "closest",
+  showlegend: false,  // ocultamos la leyenda estándar
 
   annotations: [
+    // Pico masculino
     {
-      x: 2012, // año del pico
-      y: 263.4, // velocidad del pico
-      xref: "x",
-      yref: "y",
-      text: "El saque más rápido de hombres. 263km/h", // texto fijo
-      showarrow: true,
-      xanchor: "left",
-      yanchor: "bottom",
-      xshift: 0, // desplazamiento a la derecha
-      yshift: 0, // desplazamiento hacia arriba
-      font: {
-        size: 12,
-        color: "#000000",
-      },
+      x: 2012, y: 263.4, xref: "x", yref: "y",
+      text: "El saque más rápido de hombres: 263 km/h",
+      showarrow: true, arrowhead: 2, ax: 0, ay: -40,
+      font: { size: 12, color: "#000" }
+    },
+    // Pico femenino
+    {
+      x: 2018, y: 220, xref: "x", yref: "y",
+      text: "El saque más rápido de mujeres: 220 km/h",
+      showarrow: true, arrowhead: 2, ax: 0, ay: -40,
+      font: { size: 12, color: "#000" }
     },
 
+    // Etiqueta final Hombres (junto al último punto)
     {
-      x: 2018,
-      y: 220,
-      xref: "x",
-      yref: "y",
-      text: "El saque más rápido de mujeres. 220km/h", // texto fijo
-      showarrow: true,
+      x: últimoAñoH, y: últimaVeloH,
+      xref: "x", yref: "y",
+      text: "Hombres",
+      showarrow: false,
       xanchor: "left",
-      yanchor: "bottom",
-      xshift: 0, // desplazamiento a la derecha
-      yshift: 0, // desplazamiento hacia arriba
-      font: {
-        size: 12,
-        color: "#000000",
-      },
+      yanchor: "middle",
+      xshift: 10,
+      font: { size: 14, color: "#FF7F0E", family: "Roboto, sans-serif" }
     },
-  ],
+    // Etiqueta final Mujeres
+    {
+      x: últimoAñoM, y: últimaVeloM,
+      xref: "x", yref: "y",
+      text: "Mujeres",
+      showarrow: false,
+      xanchor: "left",
+      yanchor: "middle",
+      xshift: 10,
+      font: { size: 14, color: "#1F77B4", family: "Roboto, sans-serif" }
+    }
+  ]
 };
 
 Plotly.newPlot("myDiv", dataGrafica, layout, {
@@ -282,9 +300,6 @@ myPlot.on("plotly_hover", function (dataHover) {
         <div class="hover-text-content">
           <div class="player-name">${playerName}</div>
           <div class="player-detail">  Evento: ${playerEvent}</div>
-          <div class="player-detail"> Velocidad: ${d.y.toPrecision(
-            3
-          )} km/h </div>
         </div>
       </div>
   `;

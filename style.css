@@ -132,7 +132,7 @@ font-weight: bold;
     grid-column: 1 / 2;
   }
   .gridIzquierdo {
-    grid-column: 2 / 3;
+    grid-column: 2/3;
     
   }
 
