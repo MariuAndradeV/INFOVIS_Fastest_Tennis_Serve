@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Serve</title>
+    
+    <!-- Load plotly.js into the DOM -->
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script> 
+
+    <script src="https://cdn.jsdelivr.net/npm/tone/build/toned.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+        <h1 id="titulo" class="textCenter"> Potencia al Límite: Los Saques Más Rápidos del Tenis </h1>
+
+        <div class="principal">
+            <div class="grafica" id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+            <div class="gridInfo">
+                <div class="gridDerecho alignTodo divInfoPlayer" id="hoverinfo" style="margin-left:80px;"></div>
+
+                <div class="gridIzquierdo alignTodo" id="myDiv2"><!-- Plotly chart will be drawn inside this DIV --></div>
+            </div>
+        </div>
+        
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

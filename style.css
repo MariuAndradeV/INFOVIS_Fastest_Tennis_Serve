@@ -1,0 +1,146 @@
+/* styles/style.css */
+#hoverinfo {
+margin-top: 20px;
+padding: 15px;
+border: 1px solid #ccc;
+background-color: #f9f9f9;
+border-radius: 5px;
+font-family: sans-serif;
+font-size: 0.9em;
+line-height: 1.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#titulo{
+  margin-top: 10px;
+}
+
+#hoverinfo strong {
+font-weight: bold;
+}
+
+#hoverinfo {
+margin-top: -15px;
+padding: 15px;
+border: 1px solid #ffffff;
+background-color: #ffffff;
+border-radius: 5px;
+font-family: sans-serif;
+font-size: 0.9em;
+line-height: 1.5;
+display: flex; 
+align-items: center;
+}
+
+#fotoJugadorHover {
+max-width: 80px;
+height: auto;
+margin-right: 10px;
+border-radius: 5px;
+}
+
+#detallesJugadorHover {
+margin: 0;
+}
+
+#detallesJugadorHover strong {
+font-weight: bold;
+}
+
+
+.centerText {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 2rem;
+
+    font-size: 20px;
+}
+
+.divInfoPlayer {
+
+    color: #000000;
+}
+
+.centrarContenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Clase para las imágenes del hover */
+.hover-player-image {
+    width: 80px;            /* ancho fijo */
+    height: 80px;           /* misma altura para conservar proporción 1:1 */
+    object-fit: cover;      /* recorta la imagen sin deformarla */
+    border-radius: 50%;     /* hace la máscara circular */
+}
+  
+  /* Contenedor del hover para limpiar el float */
+  .hover-info-container {
+    max-width: 350px;
+    overflow: hidden;  /* Limpia el float */
+  }
+
+  
+.textCenter{
+    text-align: center;
+    align-content: center;  
+    margin: auto;
+
+}
+
+
+
+.player-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #c81515;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+  }
+  
+  .player-detail {
+    text-align: center;
+    font-size: clamp(0.8rem, 3vw, 1.2rem);
+    color: #000000;
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  
+  .hover-info-text br {
+    display: none;
+  }
+
+  .gridInfo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;     /* fuerza los elementos al tope de su celda */
+    justify-items: center;
+    grid: 1rem;
+  }
+
+  .gridDerecho {
+    grid-column: 1 / 2;
+  }
+  .gridIzquierdo {
+    grid-column: 2 / 3;
+    
+  }
+
+.alignTodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+  
+  
