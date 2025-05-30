@@ -1,171 +1,115 @@
 const dataset = {
   datosMujeres: [
-    {
-      Player: "Venus Williams",
-      maxVelocity: 207.6,
-      Event: "2007 US Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2007,
-      Imagen: "VenusWilliams.png",
-    },
-    {
-      Player: "Kristina Mladenovic",
-      maxVelocity: 200.0,
-      Event: "2009 French Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2009,
-      Imagen: "KristinaMladenovic.jpg",
-    },
-    {
-      Player: "Serena Williams",
-      maxVelocity: 207.0,
-      Event: "2013 Australian Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2013,
-      Imagen: "SerenaWilliams.jpg",
-    },
-    {
-      Player: "Sabine Lisicki",
-      maxVelocity: 210.8,
-      Event: "2014 Stanford",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2014,
-      Imagen: "SabineLisicki.jpg",
-    },
-    {
-      Player: "Caroline Garcia",
-      maxVelocity: 203.0,
-      Event: "2016 Fed Cup",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2016,
-      Imagen: "CarolineGarcia.jpeg",
-    },
-    {
-      Player: "Georgina García Pérez",
-      maxVelocity: 220.0,
-      Event: "2018 Hungarian Ladies Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2018,
-      Imagen: "GeorginaGarcia.jpg",
-    },
-    {
-      Player: "Alycia Parks",
-      maxVelocity: 207.6,
-      Event: "2021 US Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2021,
-      Imagen: "AlyciaParks.jpg",
-    },
-    {
-      Player: "Coco Gauff",
-      maxVelocity: 206.0,
-      Event: "2022 US Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2022,
-      Imagen: "CocoGauff.jpeg",
-    },
-    {
-      Player: "Naomi Osaka",
-      maxVelocity: 205.0,
-      Event: "2024 Abu Dhabi Open",
-      Type: "Singles",
-      Gender: "Female",
-      Year: 2024,
-      Imagen: "NaomiOsaka.jpg",
-    },
+    { Player: "Venus Williams", maxVelocity: 207.6, Event: "2007 US Open", Type: "Singles", Gender: "Female", Year: 2007, Imagen: "VenusWilliams.png" },
+    { Player: "Kristina Mladenovic", maxVelocity: 200.0, Event: "2009 French Open", Type: "Singles", Gender: "Female", Year: 2009, Imagen: "KristinaMladenovic.jpg" },
+    { Player: "Serena Williams", maxVelocity: 207.0, Event: "2013 Australian Open", Type: "Singles", Gender: "Female", Year: 2013, Imagen: "SerenaWilliams.jpg" },
+    { Player: "Sabine Lisicki", maxVelocity: 210.8, Event: "2014 Stanford", Type: "Singles", Gender: "Female", Year: 2014, Imagen: "SabineLisicki.jpg" },
+    { Player: "Caroline Garcia", maxVelocity: 203.0, Event: "2016 Fed Cup", Type: "Singles", Gender: "Female", Year: 2016, Imagen: "CarolineGarcia.jpeg" },
+    { Player: "Georgina García Pérez", maxVelocity: 220.0, Event: "2018 Hungarian Ladies Open", Type: "Singles", Gender: "Female", Year: 2018, Imagen: "GeorginaGarcia.jpg" },
+    { Player: "Alycia Parks", maxVelocity: 207.6, Event: "2021 US Open", Type: "Singles", Gender: "Female", Year: 2021, Imagen: "AlyciaParks.jpg" },
+    { Player: "Coco Gauff", maxVelocity: 206.0, Event: "2022 US Open", Type: "Singles", Gender: "Female", Year: 2022, Imagen: "CocoGauff.jpeg" },
+    { Player: "Naomi Osaka", maxVelocity: 205.0, Event: "2024 Abu Dhabi Open", Type: "Singles", Gender: "Female", Year: 2024, Imagen: "NaomiOsaka.jpg" }
   ],
   datosHombres: [
-    {
-      Player: "Andy Roddick",
-      maxVelocity: 249.4,
-      Event: "2004 Davis Cup",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2004,
-      Imagen: "AndyRoddick.jpg",
-    },
-    {
-      Player: "Chris Guccione",
-      maxVelocity: 248.0,
-      Event: "2006 Davis Cup",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2006,
-      Imagen: "ChrisGuccione.jpg",
-    },
-    {
-      Player: "Ivo Karlović",
-      maxVelocity: 251.0,
-      Event: "2011 Davis Cup",
-      Type: "Doubles",
-      Gender: "Male",
-      Year: 2011,
-      Imagen: "IvoKarlovic.jpg",
-    },
-    {
-      Player: "Sam Groth",
-      maxVelocity: 263.4,
-      Event: "2012 Busan Open Challenger Tennis",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2012,
-      Imagen: "SamGroth.jpeg",
-    },
-    {
-      Player: "John Isner",
-      maxVelocity: 253.0,
-      Event: "2016 Davis Cup",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2016,
-      Imagen: "JohnIsner.jpg",
-    },
-    {
-      Player: "Oscar Otte",
-      maxVelocity: 243.0,
-      Event: "2021 US Open",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2021,
-      Imagen: "OscarOtte.png",
-    },
-    {
-      Player: "Alexei Popyrin",
-      maxVelocity: 243.0,
-      Event: "2023 Tokyo",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2023,
-      Imagen: "AlexeiPopyrin.jpeg",
-    },
-    {
-      Player: "Giovanni Mpetshi Perricard",
-      maxVelocity: 244.6,
-      Event: "2024 French Open",
-      Type: "Doubles",
-      Gender: "Male",
-      Year: 2024,
-      Imagen: "GiovanniMpetshi.jpg",
-    },
-    {
-      Player: "Ben Shelton",
-      maxVelocity: 241.4,
-      Event: "2025 BNP Paribas Open (Indian Wells)",
-      Type: "Singles",
-      Gender: "Male",
-      Year: 2025,
-      Imagen: "BenShelton.png",
-    },
-  ],
+    { Player: "Andy Roddick", maxVelocity: 249.4, Event: "2004 Davis Cup", Type: "Singles", Gender: "Male", Year: 2004, Imagen: "AndyRoddick.jpg" },
+    { Player: "Chris Guccione", maxVelocity: 248.0, Event: "2006 Davis Cup", Type: "Singles", Gender: "Male", Year: 2006, Imagen: "ChrisGuccione.jpg" },
+    { Player: "Ivo Karlović", maxVelocity: 251.0, Event: "2011 Davis Cup", Type: "Doubles", Gender: "Male", Year: 2011, Imagen: "IvoKarlovic.jpg" },
+    { Player: "Sam Groth", maxVelocity: 263.4, Event: "2012 Busan Open Challenger Tennis", Type: "Singles", Gender: "Male", Year: 2012, Imagen: "SamGroth.jpeg" },
+    { Player: "John Isner", maxVelocity: 253.0, Event: "2016 Davis Cup", Type: "Singles", Gender: "Male", Year: 2016, Imagen: "JohnIsner.jpg" },
+    { Player: "Oscar Otte", maxVelocity: 243.0, Event: "2021 US Open", Type: "Singles", Gender: "Male", Year: 2021, Imagen: "OscarOtte.png" },
+    { Player: "Alexei Popyrin", maxVelocity: 243.0, Event: "2023 Tokyo", Type: "Singles", Gender: "Male", Year: 2023, Imagen: "AlexeiPopyrin.jpeg" },
+    { Player: "Giovanni Mpetshi Perricard", maxVelocity: 244.6, Event: "2024 French Open", Type: "Doubles", Gender: "Male", Year: 2024, Imagen: "GiovanniMpetshi.jpg" },
+    { Player: "Ben Shelton", maxVelocity: 241.4, Event: "2025 BNP Paribas Open (Indian Wells)", Type: "Singles", Gender: "Male", Year: 2025, Imagen: "BenShelton.png" }
+  ]
 };
+
+
+// AudioContext para sonificación
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+
+// Carga los archivos de golpe de raqueta
+const audioHombre = new Audio('audio/golpeRaquetaHombre.mp3');
+const audioMujer  = new Audio('audio/golpeRaquetaMujer.mp3');
+
+
+// Rango global de velocidades
+const allSpeeds = [
+  ...dataset.datosMujeres.map(d => d.maxVelocity),
+  ...dataset.datosHombres.map(d => d.maxVelocity)
+];
+const minVel = Math.min(...allSpeeds);
+const maxVel = Math.max(...allSpeeds);
+
+// Función que dispara la sonificación completa
+function playShot(gender, speed) {
+  // Reproduce golpe de raqueta según género
+  const initial = (gender === 'male') ? audioHombre : audioMujer;
+  initial.currentTime = 0;
+  initial.play();
+  
+  setTimeout(playBallHit, 400);            // impacto de pelota
+  setTimeout(() => playSpeedEffect(speed), 1200); // efecto adaptativo
+}
+
+// Sonido de impacto de pelota
+function playBallHit() {
+  const osc  = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  
+}
+
+// Efecto adaptativo: tremolo + banda de ruido
+function playSpeedEffect(speed) {
+  const normalized = (speed - minVel) / (maxVel - minVel);
+  const tremoloRate = 1 + normalized * 5;      // 1Hz a 6Hz
+  const duration     = 3 - normalized * 2;      // 3s a 1s
+
+  // Genera ruido blanco
+  const bufferSize = 2 * audioCtx.sampleRate;
+  const noiseBuf   = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+  const data       = noiseBuf.getChannelData(0);
+  for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+
+  const noiseSrc = audioCtx.createBufferSource();
+  noiseSrc.buffer = noiseBuf;
+  noiseSrc.loop   = true;
+
+  // Filtro bandpass
+  const bandpass = audioCtx.createBiquadFilter();
+  bandpass.type = 'bandpass';
+  bandpass.frequency.value = 800 + normalized * 800;
+
+  // Tremolo
+  const tremoloGain = audioCtx.createGain();
+  tremoloGain.gain.value = 0.5;
+  const lfo     = audioCtx.createOscillator();
+  const lfoGain = audioCtx.createGain();
+  lfo.type           = 'sine';
+  lfo.frequency.value = tremoloRate;
+  lfoGain.gain.value  = 0.5;
+  lfo.connect(lfoGain).connect(tremoloGain.gain);
+
+  // Ganancia final y fade-out
+  const finalGain = audioCtx.createGain();
+  const now       = audioCtx.currentTime;
+  const fadeStart = now + duration - 1.5;
+  finalGain.gain.setValueAtTime(1, fadeStart);
+  finalGain.gain.linearRampToValueAtTime(0.0001, now + duration);
+
+  noiseSrc.connect(bandpass)
+          .connect(tremoloGain)
+          .connect(finalGain)
+          .connect(audioCtx.destination);
+
+  noiseSrc.start();
+  lfo.start();
+  noiseSrc.stop(now + duration);
+  lfo.stop(now + duration);
+}
+
+
+
 
 const xMujeres = dataset.datosMujeres.map((jugadora) => jugadora.Year);
 const yMujeres = dataset.datosMujeres.map((jugadora) => jugadora.maxVelocity);
@@ -359,35 +303,11 @@ myPlot.on("plotly_hover", function(dataHover) {
     }
 });
 
+// Sonificación al hacer click
 myPlot.on('plotly_click', function(data) {
-    if (data.points && data.points.length > 0) {
-        const velocidadAct = data.points[0].y;
-        const maxVelo = parseFloat(myPlot.getAttribute('data-max-velo'));
-        const minVelo = parseFloat(myPlot.getAttribute('data-min-velo'));
-        
-        if (isNaN(maxVelo)) {
-            console.error("maxVelo is not a number. Hover over the plot first.");
-            return;
-        }
-        
-        // Calcular volumen asegurando que esté entre 0.1 y 1.0
-        // Usamos 0.1 como mínimo para que siempre sea audible
-        let volume = (velocidadAct - minVelo) / (maxVelo - minVelo);
-        volume = 0.1 + (volume * 0.9);
-
-        console.log(`Reproduciendo a volumen: ${volume.toFixed(2)}`);
-        console.log(`Reproduciendo a act: ${velocidadAct}`);
-        console.log(`Reproduciendo a max: ${maxVelo}`);
-        console.log(`Reproduciendo a min: ${minVelo}`);
-        
-        currentAudio.pause();
-        currentAudio.currentTime = 0;
-        currentAudio.volume = volume;
-        
-        currentAudio.play().catch(e => {
-          console.error("Error al reproducir audio:", e);
-          // Intento alternativo para algunos navegadores
-            currentAudio.play().catch(e => console.error("Segundo intento fallido:", e));
-        });
-    }
+  if(!data.points || !data.points.length) return;
+  const pt = data.points[0];
+  const speed = pt.y;
+  const gender = (pt.curveNumber===1) ? 'male' : 'female';
+  playShot(gender, speed);
 });
