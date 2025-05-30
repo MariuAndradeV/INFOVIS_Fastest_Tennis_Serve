@@ -93,8 +93,11 @@ function playSpeedEffect(speed) {
   // Ganancia final y fade-out
   const finalGain = audioCtx.createGain();
   const now       = audioCtx.currentTime;
+
+  finalGain.gain.setValueAtTime(0.15, now);
+
   const fadeStart = now + duration - 1.5;
-  finalGain.gain.setValueAtTime(1, fadeStart);
+  finalGain.gain.setValueAtTime(0.15, fadeStart);
   finalGain.gain.linearRampToValueAtTime(0.0001, now + duration);
 
   noiseSrc.connect(bandpass)
